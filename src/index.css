@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color: #f7f9fc; 
+  color: #333;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app-header {
+  background-color: #4a4e69;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.app-nav a {
+  color: #c9ada7; 
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.app-nav a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.main-content {
+  flex-grow: 1; 
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+}
+
+/* --- Form Elements --- */
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+  border-color: #4a4e69;
+  outline: none;
+  box-shadow: 0 0 0 1px #4a4e69;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+
+.card label input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  min-width: 120px;
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #4a4e69;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #3b3e51;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #c9ada7;
+  color: #4a4e69;
+}
+
+.btn-secondary:hover {
+  background-color: #b89b95;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  min-width: unset;
+}
+
+
+.flex-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.field-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px dashed #e9ecef;
+}
