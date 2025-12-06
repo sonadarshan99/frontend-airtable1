@@ -1,6 +1,6 @@
 import React from 'react';
 export default function Home(){ 
-const backend = process.env.REACT_APP_BACKEND || "http://localhost:4000";
+const backend = process.env.REACT_APP_BACKEND || "https://backend-airtable2.onrender.com";
 
   return (
     <div className="container">
